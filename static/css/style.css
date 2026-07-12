@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+.container{
+    width:400px;
+    margin:50px auto;
+    background:#222;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(255,255,255,.3);
+}
+
+h1,h2{
+    text-align:center;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e68900;
+}
+
+a{
+    color:#00bfff;
+    text-decoration:none;
+}
+
+.theatre{
+    text-align:center;
+    margin-top:20px;
+}
+
+.screen{
+    width:70%;
+    margin:auto;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:10px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.seats{
+    margin-top:40px;
+    font-size:35px;
+    line-height:60px;
+}
