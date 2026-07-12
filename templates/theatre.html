@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
 <title>Movie Theatre</title>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
 <body>
 
+<div class="topbar">
+
+<a href="/logout">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
 <div class="theatre">
 
 <div class="screen">
 
+<h2>🎬 CINEMA SCREEN 🎬</h2>
+
+<h1>
 Hi, {{ firstname }} {{ lastname }}
+</h1>
 
-<br><br>
-
+<h2>
 Welcome to your favourite movie
+</h2>
 
-<br><br>
+<h1 style="color:yellow;">
+{{ movie }}
+</h1>
 
-🎬 {{ movie }}
+<p>
+🍿 Enjoy Your Show 🍿
+</p>
 
 </div>
 
@@ -32,15 +48,15 @@ Welcome to your favourite movie
 
 💺 💺 💺 💺 💺 💺 💺 💺 💺
 
-<br>
+<br><br>
 
 💺 💺 💺 💺 💺 💺 💺 💺 💺
 
-<br>
+<br><br>
 
 💺 💺 💺 💺 💺 💺 💺 💺 💺
 
-<br>
+<br><br>
 
 💺 💺 💺 💺 💺 💺 💺 💺 💺
 
