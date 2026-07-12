@@ -1,16 +1,14 @@
 from flask import Flask
 
+from auth.login import login_bp
+from auth.register import register_bp
+
 app = Flask(__name__)
 
 app.secret_key = "movie_theatre_secret_key"
 
-@app.route("/")
-def home():
-    return """
-    <h1>🎬 Movie Theatre Application</h1>
-    <h3>Application is Running Successfully!</h3>
-    <p>Login and Registration pages will be added in the next step.</p>
-    """
+app.register_blueprint(login_bp)
+app.register_blueprint(register_bp)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
